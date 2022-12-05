@@ -1,5 +1,6 @@
 package com.nest.product_app.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +13,10 @@ public class ProductController {
     @PostMapping("/search")
     public String Search(){
         return "welcome to search product page";
+    }
+    @GetMapping("/viewall")
+    public String View(){
+        return "welcome to view all product page";
     }
 
 }
